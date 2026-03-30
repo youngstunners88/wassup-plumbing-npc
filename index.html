@@ -1,76 +1,130 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WASSUP PLUMBING NPC | Diepsloot West 7</title>
-<meta name="description" content="WASSUP PLUMBING NPC - Professional plumbing in Diepsloot West 7. Call 064 702 3285">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-<style>
-*{margin:0;padding:0;box-sizing:border-box}:root{--p:#5c6bc0;--s:#3949ab;--d:#1a237e;--l:#e8eaf6;--a:#7986cb}
-body{font-family:'Inter',sans-serif;color:#333;line-height:1.6}a{text-decoration:none}
-nav{position:fixed;top:0;width:100%;z-index:1000;background:rgba(255,255,255,.97);backdrop-filter:blur(10px);box-shadow:0 2px 20px rgba(0,0,0,.08);padding:12px 0}
-.nav-inner{max-width:1100px;margin:0 auto;padding:0 20px;display:flex;justify-content:space-between;align-items:center}
-.logo{font-weight:800;font-size:1.1rem;color:var(--d)}.nav-links{display:flex;gap:24px;align-items:center}.nav-links a{font-weight:600;color:#666;font-size:.9rem}
-.nav-cta{background:var(--p)!important;color:#fff!important;padding:8px 20px;border-radius:6px;font-weight:700}
-.hero{min-height:100vh;display:flex;align-items:center;background:linear-gradient(135deg,var(--d) 0%,var(--s) 100%);color:#fff;padding-top:70px;position:relative;overflow:hidden}
-.hero::before{content:'';position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=1200') center/cover;opacity:.12}
-.hero-inner{max-width:1100px;margin:0 auto;padding:60px 20px;position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
-.hero h1{font-size:2.4rem;font-weight:800;line-height:1.15;margin-bottom:16px}.hero p{font-size:1.05rem;color:rgba(255,255,255,.8);margin-bottom:24px}
-.hero-image{border-radius:14px;overflow:hidden;box-shadow:0 16px 50px rgba(0,0,0,.3)}.hero-image img{width:100%;display:block}
-.btn{display:inline-flex;align-items:center;gap:6px;padding:14px 32px;border-radius:8px;font-weight:700;font-size:1rem;transition:transform .2s}
-.btn-primary{background:var(--a);color:var(--d)}.btn-primary:hover{transform:translateY(-2px)}
-.stats{background:#fff;padding:36px 20px;border-bottom:1px solid #eee}.stats-inner{max-width:1100px;margin:0 auto;display:flex;justify-content:center;gap:50px;flex-wrap:wrap;text-align:center}
-.stat h3{font-size:1.4rem;font-weight:800;color:var(--p)}.stat p{font-size:.85rem;color:#666}
-.services{padding:80px 20px;background:var(--l)}.sh{text-align:center;margin-bottom:50px}.sh h2{font-size:2.2rem;font-weight:800;color:var(--d)}.sh p{color:#666;max-width:500px;margin:8px auto 0}
-.sg{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
-.sc{background:#fff;border-radius:14px;padding:32px 24px;box-shadow:0 3px 16px rgba(0,0,0,.05);border-top:3px solid var(--p);transition:transform .3s}.sc:hover{transform:translateY(-4px)}
-.sc .icon{font-size:2rem;margin-bottom:16px}.sc h3{font-size:1.2rem;font-weight:700;margin-bottom:8px;color:var(--d)}.sc p{color:#666;font-size:.95rem}
-.about{padding:80px 20px;background:#fff}.about-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
-.about-img{border-radius:14px;overflow:hidden;box-shadow:0 8px 30px rgba(0,0,0,.08)}.about-img img{width:100%;display:block}
-.about h2{font-size:2.2rem;font-weight:800;margin-bottom:16px;color:var(--d)}.about p{color:#666;margin-bottom:12px;font-size:1rem}
-.gallery{padding:80px 20px;background:var(--l)}.gg{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.gi{border-radius:10px;overflow:hidden;aspect-ratio:4/3;box-shadow:0 3px 12px rgba(0,0,0,.08)}.gi img{width:100%;height:100%;object-fit:cover;transition:transform .5s}.gi:hover img{transform:scale(1.05)}
-.contact{padding:80px 20px;background:#fff}.ci{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:50px}
-.contact h2{font-size:2.2rem;font-weight:800;margin-bottom:16px;color:var(--d)}.cti{margin-top:24px}.ct{display:flex;align-items:center;gap:14px;margin-bottom:20px}
-.ct .ic{width:46px;height:46px;border-radius:10px;background:var(--l);display:flex;align-items:center;justify-content:center;font-size:1.2rem}
-.ct h4{font-weight:700;margin-bottom:2px}.ct a,.ct p{color:#666}.ct a:hover{color:var(--p)}
-footer{background:var(--d);color:rgba(255,255,255,.5);padding:50px 20px 24px}.ft-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr;gap:40px}
-footer h4{color:#fff;margin-bottom:12px;font-size:.95rem}footer ul{list-style:none}footer li{margin-bottom:8px;font-size:.9rem}
-footer a{color:rgba(255,255,255,.5);transition:color .3s}footer a:hover{color:var(--a)}
-.ft-bottom{max-width:1100px;margin:30px auto 0;padding-top:20px;border-top:1px solid rgba(255,255,255,.08);text-align:center;font-size:.85rem}
-@media(max-width:768px){.nav-links{display:none}.hero-inner{grid-template-columns:1fr;text-align:center}.hero h1{font-size:1.8rem}.hero-image{display:none}.about-inner,.ci{grid-template-columns:1fr}.ft-inner{grid-template-columns:1fr}.gg{grid-template-columns:1fr}}
-</style></head><body>
-<nav><div class="nav-inner">
-<a href="#" class="logo">WASSUP PLUMBING NPC</a>
-<div class="nav-links"><a href="#services">Services</a><a href="#about">About</a><a href="#gallery">Our Work</a><a href="#contact" class="nav-cta">📞 064 702 3285</a></div>
-</div></nav>
-<section class="hero"><div class="hero-inner">
-<div><h1>WASSUP PLUMBING NPC — Professional Plumbing in Diepsloot West 7</h1><p>Quality plumbing services in Diepsloot West 7, Johannesburg. Rated 5 stars by 1+ customers. Reliable work you can count on.</p><a href="tel:0647023285" class="btn btn-primary">📞 Call 064 702 3285</a></div>
-<div class="hero-image"><img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=1200" alt="WASSUP PLUMBING NPC"></div>
-</div></section>
-<section class="stats"><div class="stats-inner">
-<div class="stat"><h3>⭐5</h3><p>1+ reviews</p></div>
-<div class="stat"><h3>📍Diepsloot West 7</h3><p>Johannesburg</p></div>
-<div class="stat"><h3>🕐 Fast</h3><p>Response</p></div>
-<div class="stat"><h3>✅ Quality</h3><p>Guaranteed</p></div>
-</div></section>
-<section class="services" id="services"><div class="sh"><h2>Our Services</h2><p>Professional plumbing solutions for your home or business</p></div>
-<div class="sg"><div class="sc"><div class="icon">🔧</div><h3>General Plumbing</h3><p>Leaking taps, burst pipes, toilet repairs.</p></div><div class="sc"><div class="icon">🚿</div><h3>Geyser Services</h3><p>Installation, repair, replacement.</p></div><div class="sc"><div class="icon">🔍</div><h3>Leak Detection</h3><p>Find and fix hidden leaks.</p></div><div class="sc"><div class="icon">🚰</div><h3>Drain Cleaning</h3><p>Blocked drains cleared.</p></div><div class="sc"><div class="icon">🏗️</div><h3>Installations</h3><p>New builds and renovations.</p></div><div class="sc"><div class="icon">🚨</div><h3>Emergency</h3><p>24/7 emergency plumbing.</p></div></div></section>
-<section class="about" id="about"><div class="about-inner">
-<div class="about-img"><img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?w=800" alt="About WASSUP PLUMBING NPC"></div>
-<div><h2>About WASSUP PLUMBING NPC</h2><p>WASSUP PLUMBING NPC provides professional plumbing services in Diepsloot West 7. With a 5-star rating from 1+ customers, we're committed to quality.</p><p>Contact us today for a free quote.</p></div>
-</div></section>
-<section class="gallery" id="gallery"><div class="sh"><h2>Our Work</h2><p>Quality plumbing across Johannesburg</p></div>
-<div class="gg"><div class="gi"><img src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=600" alt="WASSUP PLUMBING NPC work" loading="lazy"></div><div class="gi"><img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?w=600" alt="WASSUP PLUMBING NPC work" loading="lazy"></div><div class="gi"><img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600" alt="WASSUP PLUMBING NPC work" loading="lazy"></div></div></section>
-<section class="contact" id="contact"><div class="ci">
-<div><h2>Get In Touch</h2><p>Need plumbing services? Contact WASSUP PLUMBING NPC.</p>
-<div class="cti">
-<div class="ct"><div class="ic">📞</div><div><h4>Phone</h4><a href="tel:0647023285">064 702 3285</a></div></div>
-<div class="ct"><div class="ic">📍</div><div><h4>Location</h4><p>7185 Peach Rd, Diepsloot West 7, Diepsloot, 2189, South Africa</p></div></div>
-</div></div>
-<div><iframe src="https://maps.google.com/maps?q=7185%20Peach%20Rd%2C%20Diepsloot%20West%207%2C%20Diepsloot%2C%202189%2C%20South%20Africa&output=embed&z=15" width="100%" height="380" style="border:0;border-radius:14px" loading="lazy"></iframe></div>
-</div></section>
-<footer><div class="ft-inner">
-<div><div style="font-weight:800;color:#fff;margin-bottom:8px">WASSUP PLUMBING NPC</div><p>Professional plumbing in Diepsloot West 7.</p></div>
-<div><h4>Contact</h4><ul><li><a href="tel:0647023285">📞 064 702 3285</a></li><li>📍 7185 Peach Rd, Diepsloot West 7, Diepsloot, 2189, South Africa</li></ul></div>
-</div><div class="ft-bottom"><p>&copy; 2026 WASSUP PLUMBING NPC | Diepsloot West 7</p></div></footer>
-</body></html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wassup Plumbing Npc | Plumbing Services in South Africa</title>
+    <meta name="description" content="Wassup Plumbing Npc provides professional plumbing services in South Africa. Quality You Can Trust. Call now for a free quote!">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root { --primary: #0066CC; --secondary: #00A8E8; --accent: #FF6B35; --dark: #003D7A; --light: #E6F2FF; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Open Sans', sans-serif; line-height: 1.6; color: #333; }
+        h1, h2, h3 { font-family: 'Montserrat', sans-serif; }
+        nav { position: fixed; top: 0; width: 100%; padding: 1rem 5%; background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); border-bottom: 2px solid var(--primary); z-index: 1000; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.5rem; font-weight: 700; color: var(--primary); text-decoration: none; }
+        .nav-links { display: flex; gap: 2rem; list-style: none; }
+        .nav-links a { color: var(--dark); text-decoration: none; font-weight: 500; transition: color 0.3s; }
+        .nav-links a:hover { color: var(--primary); }
+        .hero { min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 120px 5% 80px; background: linear-gradient(135deg, var(--light) 0%, #fff 100%); position: relative; overflow: hidden; }
+        .hero::before { content: ''; position: absolute; top: -50%; right: -20%; width: 600px; height: 600px; background: var(--primary); opacity: 0.05; border-radius: 50%; }
+        .hero-content { max-width: 800px; position: relative; z-index: 1; }
+        .hero h1 { font-size: clamp(2.5rem, 5vw, 4rem); color: var(--dark); margin-bottom: 1rem; }
+        .hero-subtitle { font-size: 1.5rem; color: var(--primary); margin-bottom: 1.5rem; }
+        .hero p { font-size: 1.2rem; color: #666; margin-bottom: 2rem; }
+        .cta-button { display: inline-block; padding: 1rem 2.5rem; background: var(--primary); color: white; text-decoration: none; border-radius: 50px; font-weight: 600; transition: all 0.3s; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+        .cta-button:hover { background: var(--dark); transform: translateY(-2px); }
+        .services { padding: 5rem 5%; background: #fff; }
+        .section-title { text-align: center; font-size: 2.5rem; color: var(--dark); margin-bottom: 3rem; }
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto; }
+        .service-card { padding: 2rem; border-radius: 15px; background: var(--light); transition: all 0.3s; text-align: center; }
+        .service-card:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        .service-card i { font-size: 3rem; color: var(--primary); margin-bottom: 1rem; }
+        .service-card h3 { color: var(--dark); margin-bottom: 0.5rem; }
+        .about { padding: 5rem 5%; background: var(--light); }
+        .about-content { max-width: 1000px; margin: 0 auto; text-align: center; }
+        .about h2 { color: var(--dark); margin-bottom: 1.5rem; }
+        .about p { font-size: 1.1rem; color: #555; margin-bottom: 1rem; }
+        .contact { padding: 5rem 5%; background: var(--dark); color: white; text-align: center; }
+        .contact h2 { margin-bottom: 2rem; }
+        .contact-info { display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap; margin-top: 2rem; }
+        .contact-item { display: flex; align-items: center; gap: 0.5rem; }
+        .contact-item i { color: var(--accent); font-size: 1.5rem; }
+        footer { padding: 2rem 5%; background: #1a1a1a; color: #999; text-align: center; }
+        footer a { color: var(--accent); text-decoration: none; }
+        @media (max-width: 768px) { .nav-links { display: none; } .hero h1 { font-size: 2rem; } .contact-info { flex-direction: column; gap: 1rem; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#" class="logo">Wassup Plumbing Npc</a>
+        <ul class="nav-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Wassup Plumbing Npc</h1>
+            <p class="hero-subtitle">Quality You Can Trust</p>
+            <p>Professional plumbing services in South Africa. Quality workmanship, reliable service, competitive prices.</p>
+            <a href="#contact" class="cta-button">Get a Free Quote</a>
+        </div>
+    </section>
+    <section class="services" id="services">
+        <h2 class="section-title">Our Services</h2>
+        <div class="services-grid">
+            
+            <div class="service-card">
+                <i class="fas fa-check-circle"></i>
+                <h3>Emergency Repairs</h3>
+                <p>Professional emergency repairs with quality guarantee.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-check-circle"></i>
+                <h3>Leak Detection</h3>
+                <p>Professional leak detection with quality guarantee.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-check-circle"></i>
+                <h3>Pipe Installation</h3>
+                <p>Professional pipe installation with quality guarantee.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-check-circle"></i>
+                <h3>Drain Cleaning</h3>
+                <p>Professional drain cleaning with quality guarantee.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-check-circle"></i>
+                <h3>Geyser Services</h3>
+                <p>Professional geyser services with quality guarantee.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-check-circle"></i>
+                <h3>Bathroom Renovations</h3>
+                <p>Professional bathroom renovations with quality guarantee.</p>
+            </div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2>About Wassup Plumbing Npc</h2>
+            <p>Welcome to Wassup Plumbing Npc, your trusted plumbing service provider in South Africa. With years of experience and a commitment to excellence, we deliver top-quality services that exceed expectations.</p>
+            <p>Our team of skilled professionals is dedicated to providing reliable, efficient, and affordable solutions for all your plumbing needs.</p>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>Ready to get started? Contact us today for a free consultation!</p>
+        <div class="contact-info">
+            <div class="contact-item"><i class="fas fa-phone"></i><span>Call for Quote</span></div>
+            <div class="contact-item"><i class="fas fa-envelope"></i><span>info@wassupplumbingnpc.co.za</span></div>
+            <div class="contact-item"><i class="fas fa-map-marker-alt"></i><span>South Africa</span></div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2026 Wassup Plumbing Npc. All rights reserved. | Professional plumbing services in South Africa</p>
+    </footer>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>

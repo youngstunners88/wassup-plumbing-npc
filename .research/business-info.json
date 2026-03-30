@@ -1,0 +1,20 @@
+{
+  "businessName": "Wassup Plumbing Npc",
+  "category": "plumbing",
+  "brandColors": {
+    "primary": "#0066CC",
+    "secondary": "#00A8E8",
+    "accent": "#FF6B35",
+    "dark": "#003D7A",
+    "light": "#E6F2FF"
+  },
+  "tagline": "Quality You Can Trust",
+  "services": [
+    "Emergency Repairs",
+    "Leak Detection",
+    "Pipe Installation",
+    "Drain Cleaning",
+    "Geyser Services",
+    "Bathroom Renovations"
+  ]
+}
